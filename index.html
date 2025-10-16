@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.I. Digital Solutions - Social Media & Talent Management Agency</title>
+    <meta name="description" content="Expert social media management, paid advertising, SEO, and talent representation services to grow your digital presence.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: 'hsl(220, 70%, 85%)',
+                        secondary: 'hsl(270, 60%, 85%)',
+                        accent: 'hsl(25, 85%, 80%)',
+                        background: 'hsl(0, 0%, 98%)',
+                        foreground: 'hsl(220, 15%, 20%)',
+                        muted: 'hsl(220, 15%, 90%)',
+                        'muted-foreground': 'hsl(220, 10%, 45%)',
+                        border: 'hsl(220, 15%, 85%)',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0) translateX(-50%);
+            }
+            50% {
+                transform: translateY(-10px) translateX(-50%);
+            }
+        }
+        .animate-bounce {
+            animation: bounce 2s infinite;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 0.5rem;
+            border: 2px solid hsl(220, 15%, 85%);
+            transition: all 0.3s;
+        }
+        
+        .card:hover {
+            border-color: hsl(220, 70%, 85%);
+        }
+        
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem 2rem;
+            font-size: 1.125rem;
+            font-weight: 600;
+            border-radius: 0.5rem;
+            background-color: hsl(220, 70%, 85%);
+            color: hsl(220, 15%, 20%);
+            text-decoration: none;
+            transition: all 0.3s;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn:hover {
+            background-color: hsl(220, 70%, 80%);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-image-overlay {
+            transition: transform 0.5s;
+        }
+        
+        .card:hover .service-image-overlay {
+            transform: scale(1.1);
+        }
+        
+        .stat-icon {
+            transition: transform 0.3s;
+        }
+        
+        .stat-group:hover .stat-icon {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0 bg-gray-300">
+            <img
+                src="modern-digital-marketing-workspace-with-social-med.jpg"
+                alt="Digital workspace"
+                class="w-full h-full object-cover opacity-30"
+                style="mix-blend-mode: overlay;"
+            />
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-10 container mx-auto px-4 py-20 text-center">
+            <div class="mb-8 flex justify-center">
+                <div class="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full bg-white shadow-2xl flex items-center justify-center p-8">
+                    <img src="si-logo-new.png" alt="S.I. Digital Solutions Logo" class="w-full h-full object-contain" />
+                </div>
+            </div>
+            <p class="text-xl md:text-2xl lg:text-3xl text-gray-800 mb-8 max-w-3xl mx-auto leading-relaxed font-medium" style="text-wrap: balance; text-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                Elevate your brand with expert social media management and talent representation
+            </p>
+            <p class="text-base md:text-lg text-gray-700 mb-12 max-w-2xl mx-auto leading-relaxed" style="text-shadow: 0 1px 2px rgba(0,0,0,0.1);">
+                We help businesses and creators grow their digital presence through strategic marketing, paid advertising, and dedicated team support.
+            </p>
+            <a href="#contact" class="btn">
+                Get Started
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+            </a>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 z-10 animate-bounce" style="transform: translateX(-50%);">
+            <div class="w-6 h-10 border-2 border-gray-600 rounded-full flex items-start justify-center p-2" style="border-color: rgba(75, 85, 99, 0.5);">
+                <div class="w-1.5 h-3 rounded-full" style="background-color: rgba(75, 85, 99, 0.7);"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-20 bg-gradient-to-br from-blue-50 via-purple-50 to-orange-50">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+                <div class="text-center stat-group">
+                    <div class="flex justify-center mb-4">
+                        <div class="w-16 h-16 rounded-full bg-white shadow-lg flex items-center justify-center stat-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="rgb(37, 99, 235)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="text-3xl md:text-4xl font-bold text-gray-800 mb-2">500+</div>
+                    <div class="text-sm md:text-base text-gray-600">Clients Served</div>
+                </div>
+
+                <div class="text-center stat-group">
+                    <div class="flex justify-center mb-4">
+                        <div class="w-16 h-16 rounded-full bg-white shadow-lg flex items-center justify-center stat-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="rgb(147, 51, 234)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                                <polyline points="17 6 23 6 23 12"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="text-3xl md:text-4xl font-bold text-gray-800 mb-2">2M+</div>
+                    <div class="text-sm md:text-base text-gray-600">Followers Grown</div>
+                </div>
+
+                <div class="text-center stat-group">
+                    <div class="flex justify-center mb-4">
+                        <div class="w-16 h-16 rounded-full bg-white shadow-lg flex items-center justify-center stat-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="rgb(249, 115, 22)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="8" r="7"></circle>
+                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="text-3xl md:text-4xl font-bold text-gray-800 mb-2">98%</div>
+                    <div class="text-sm md:text-base text-gray-600">Client Satisfaction</div>
+                </div>
+
+                <div class="text-center stat-group">
+                    <div class="flex justify-center mb-4">
+                        <div class="w-16 h-16 rounded-full bg-white shadow-lg flex items-center justify-center stat-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="rgb(37, 99, 235)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="text-3xl md:text-4xl font-bold text-gray-800 mb-2">24/7</div>
+                    <div class="text-sm md:text-base text-gray-600">Support Available</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-24 md:py-32 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-4" style="text-wrap: balance;">Our Services</h2>
+                <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    Comprehensive digital solutions tailored to your unique needs
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                <!-- Service 1 -->
+                <div class="card overflow-hidden">
+                    <div class="relative h-48 overflow-hidden">
+                        <img
+                            src="social-media-dashboard.png"
+                            alt="Marketing & Social Media Management"
+                            class="w-full h-full object-cover service-image-overlay"
+                        />
+                        <div class="absolute inset-0 bg-gradient-to-br from-blue-600 to-blue-500 opacity-60"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-16 h-16 rounded-full bg-white bg-opacity-90 flex items-center justify-center shadow-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="hsl(220, 70%, 85%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                                    <polyline points="17 6 23 6 23 12"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Marketing & Social Media Management</h3>
+                        <p class="text-base text-gray-600 leading-relaxed">
+                            Comprehensive social media strategy, content creation, and community management to build your brand presence across all platforms.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="card overflow-hidden">
+                    <div class="relative h-48 overflow-hidden">
+                        <img
+                            src="digital-advertising-campaign-performance-metrics.jpg"
+                            alt="Paid Advertising & SEO"
+                            class="w-full h-full object-cover service-image-overlay"
+                        />
+                        <div class="absolute inset-0 bg-gradient-to-br from-purple-600 to-purple-500 opacity-60"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-16 h-16 rounded-full bg-white bg-opacity-90 flex items-center justify-center shadow-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="hsl(220, 70%, 85%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <circle cx="12" cy="12" r="6"></circle>
+                                    <circle cx="12" cy="12" r="2"></circle>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Paid Advertising & SEO</h3>
+                        <p class="text-base text-gray-600 leading-relaxed">
+                            Data-driven paid advertising campaigns on Facebook, Instagram, Google, and more. Plus expert SEO optimization to increase organic visibility.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="card overflow-hidden">
+                    <div class="relative h-48 overflow-hidden">
+                        <img
+                            src="influencer-content-creator-professional-photoshoot.jpg"
+                            alt="Talent Management & Representation"
+                            class="w-full h-full object-cover service-image-overlay"
+                        />
+                        <div class="absolute inset-0 bg-gradient-to-br from-orange-500 to-orange-400 opacity-60"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-16 h-16 rounded-full bg-white bg-opacity-90 flex items-center justify-center shadow-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="hsl(220, 70%, 85%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Talent Management & Representation</h3>
+                        <p class="text-base text-gray-600 leading-relaxed">
+                            Professional representation for creators and influencers. We handle negotiations, partnerships, and career development.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="card overflow-hidden">
+                    <div class="relative h-48 overflow-hidden">
+                        <img
+                            src="collaborative-team-working-on-digital-strategy.jpg"
+                            alt="Dedicated Growth Team"
+                            class="w-full h-full object-cover service-image-overlay"
+                        />
+                        <div class="absolute inset-0 bg-gradient-to-br from-blue-600 to-purple-600 opacity-60"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-16 h-16 rounded-full bg-white bg-opacity-90 flex items-center justify-center shadow-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="hsl(220, 70%, 85%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path>
+                                    <path d="M5 3v4"></path>
+                                    <path d="M19 17v4"></path>
+                                    <path d="M3 5h4"></path>
+                                    <path d="M17 19h4"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Dedicated Growth Team</h3>
+                        <p class="text-base text-gray-600 leading-relaxed">
+                            A committed team working exclusively on growing your social media presence with proven strategies and consistent engagement.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 md:py-32" style="background-color: rgba(220, 215, 230, 0.3);">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-4" style="text-wrap: balance;">
+                        Let's Work Together
+                    </h2>
+                    <p class="text-lg md:text-xl text-gray-600 leading-relaxed">
+                        Ready to elevate your digital presence? Get in touch with us today.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="p-6 border-b-2 border-gray-200">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Contact Us</h3>
+                        <p class="text-base text-gray-600 flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                            </svg>
+                            sidigitalsolutionsfl@gmail.com
+                        </p>
+                    </div>
+                    <div class="p-6">
+                        <form onsubmit="handleSubmit(event)" class="space-y-6">
+                            <div class="space-y-2">
+                                <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    placeholder="Your name"
+                                    required
+                                    class="w-full px-4 py-2 border-2 border-gray-300 rounded-md focus:outline-none focus:border-blue-400"
+                                />
+                            </div>
+
+                            <div class="space-y-2">
+                                <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="your.email@example.com"
+                                    required
+                                    class="w-full px-4 py-2 border-2 border-gray-300 rounded-md focus:outline-none focus:border-blue-400"
+                                />
+                            </div>
+
+                            <div class="space-y-2">
+                                <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    placeholder="Tell us about your project or goals..."
+                                    rows="6"
+                                    required
+                                    class="w-full px-4 py-2 border-2 border-gray-300 rounded-md focus:outline-none focus:border-blue-400"
+                                ></textarea>
+                            </div>
+
+                            <button type="submit" class="btn w-full">
+                                Send Message
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12" style="background-color: hsl(220, 70%, 85%); color: hsl(220, 15%, 20%);">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <h3 class="text-2xl font-bold mb-2">S.I. Digital Solutions</h3>
+                <p class="mb-4" style="color: rgba(51, 65, 85, 0.8);">Social Media & Talent Management Agency</p>
+                <p class="text-sm" style="color: rgba(51, 65, 85, 0.6);">
+                    © <span id="year"></span> S.I. Digital Solutions. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Set current year
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        // Handle form submission
+        function handleSubmit(event) {
+            event.preventDefault();
+            
+            const form = event.target;
+            const name = form.name.value;
+            const email = form.email.value;
+            const message = form.message.value;
+            
+            // Create mailto link
+            const subject = encodeURIComponent(`Contact from ${name}`);
+            const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+            const mailtoLink = `mailto:sidigitalsolutionsfl@gmail.com?subject=${subject}&body=${body}`;
+            
+            // Open email client
+            window.location.href = mailtoLink;
+            
+            // Reset form
+            setTimeout(() => {
+                form.reset();
+            }, 1000);
+        }
+    </script>
+</body>
+</html>
